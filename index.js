@@ -10,7 +10,7 @@ input.addEventListener("keyup", (e) => {
 });
 function getImg(params) {
   fetch(
-    `https://api.unsplash.com/search/photos?query=${params}&client_id=MJY-EksM8K3YCYoTu6hc_a8tAKIk4wGki2mPcFBedYw`
+    `https://api.unsplash.com/search/photos?query=${params}&per_page=15&client_id=MJY-EksM8K3YCYoTu6hc_a8tAKIk4wGki2mPcFBedYw`
   )
     .then((res) => res.json())
     .then((data) => createImg(data));
